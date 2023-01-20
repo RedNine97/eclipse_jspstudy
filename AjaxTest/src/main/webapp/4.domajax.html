@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ajax의 개요 및 작성법(xhr객체)</title>
+<script>
+function test(){
+/*
+IE(ActiveXObject 속성), IE외의 chrome, firefox,,, (XMLHttpRequest 속성)
+IE7 이후부터, IE외의 다른 브라우저 -> XMLHttpRequest 속성
+*/
+	if(window.XMLHttpRequest){
+		var xhrObject=new XMLHttpRequest(); //객체생성
+		alert(xhrObject);//[xhr Object] => 주소값 표시
+	}
+}
+</script>
+</head>
+<body onload="test()">
+
+</body>
+</html>
